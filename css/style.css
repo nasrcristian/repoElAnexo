@@ -338,6 +338,69 @@ footer img {
     justify-content:space-evenly;
 } 
 
+/* ANIMACIONES */
+
+@keyframes aparicionNav {
+    0% {
+        opacity: 0;
+        background-color: #810000;
+        color:#430581
+    }
+
+    100% {
+        opacity: 1;
+        background-color: #FF9BAC;
+    }
+
+}
+
+@keyframes entradaMapa {
+    0% {
+        transform: translateX(-900px);
+        border:#43058100 solid 3px;
+    }
+    50% {
+        transform: translateX(0px);
+        border:#43058125 solid 3px;
+    }
+    
+    75% {
+        border:#4305818c solid 3px;
+    }
+
+    100% {
+        border:#430581 solid 3px;
+    }
+
+}
+
+@keyframes aparicionFooter {
+    0% {
+        transform:scale(0);
+    }
+
+    100% {
+        transform:scale(1);
+    }
+}
+
+footer {
+    animation-name: aparicionFooter;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+nav {
+    animation-name: aparicionNav;
+    animation-duration: 1s;
+    animation-timing-function: normal;
+}
+
+.entradaMapa {
+    animation-name: entradaMapa;
+    animation-duration: 6s;
+    animation-timing-function: ease-out;
+}
 
 /*INDEX*/
 
@@ -376,6 +439,7 @@ main article figcaption {
     border: solid 3px rgb(58, 0, 124);
     border-radius: 20%;
     line-height: 2rem;
+    overflow-y: hidden;
 }
 
 .gridIndexMain {
@@ -450,6 +514,13 @@ main article figcaption {
     border: rgb(64, 196, 248) 10px double;
     width:50%;
 
+}
+
+.serviciosDesplazamientoDer {
+    transform:translate(10rem, 0);
+}
+.serviciosDesplazamientoIzq {
+    transform:translate(-10rem, 0);
 }
 
 /* PEDIDO */
