@@ -5,9 +5,9 @@
 /* ETIQUETAS GENERALES */
 *{ 
     margin: 0;
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0; 
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 html {
@@ -30,7 +30,7 @@ input[type=number]::-webkit-outer-spin-button {
 nav {
     background-color: #FF9BAC;
     margin:auto;
-    width:100%;
+    width:100vw;
 } 
 nav ul{
     list-style: none;
@@ -62,10 +62,11 @@ nav ul li a:hover {
 
 
 
-@media only screen and (max-width:1166px) {
+@media only screen and (max-width:1095px) {
     nav ul li a {
-        padding: 0;;
-        margin:40px;
+        padding: 0;
+        margin: 40px;
+        font-size: 2rem;
     }
 }
 
@@ -340,57 +341,8 @@ footer img {
     justify-content:space-evenly;
 } 
 
-/* ANIMACIONES */
 
-@keyframes aparicionNav {
-    0% {
-        opacity: 0;
-        background-color: #810000;
-        color:#430581
-    }
 
-    100% {
-        opacity: 1;
-        background-color: #FF9BAC;
-    }
-
-}
-
-@keyframes entradaMapa {
-    0% {
-        transform: translateX(-900px);
-        border:#43058100 solid 3px;
-    }
-    50% {
-        transform: translateX(0px);
-        border:#43058125 solid 3px;
-    }
-    
-    75% {
-        border:#4305818c solid 3px;
-    }
-
-    100% {
-        border:#430581 solid 3px;
-    }
-
-}
-
-@keyframes aparicionFooter {
-    0% {
-        transform:scale(0);
-    }
-
-    100% {
-        transform:scale(1);
-    }
-}
-
-footer {
-    animation-name: aparicionFooter;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-}
 
 nav {
     animation-name: aparicionNav;
@@ -398,11 +350,7 @@ nav {
     animation-timing-function: normal;
 }
 
-.entradaMapa {
-    animation-name: entradaMapa;
-    animation-duration: 6s;
-    animation-timing-function: ease-out;
-}
+
 
 /*INDEX*/
 
@@ -429,16 +377,16 @@ main article figure {
 
 main article figure img {
     width:30rem;
-    border: double 10px purple;
+    border: #430581 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
     border-radius: 50%;
-    margin: 2rem 0rem;
+    margin: 0;
 }
 
 main article figcaption {
     font-size:1,2vw;
     padding: 2vh 2vw;
-    margin:1rem 1rem;
-    border: solid 3px rgb(58, 0, 124);
+    box-shadow: rgba(36, 9, 100, 0.895) 1px 2px 2px 3px;
     border-radius: 20%;
     line-height: 2rem;
     overflow-y: hidden;
@@ -446,10 +394,10 @@ main article figcaption {
 
 .gridIndexMain {
     display:grid;
-    width:100%;
+    width:100vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:auto;
-    column-gap:15%;
+    column-gap:10%;
     
 }
 

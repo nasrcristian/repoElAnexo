@@ -5,38 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Servicios - el Anexo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="shortcut icon"  href="../img/logo-anexo.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-<!--starts header-->
-    <header>
-
-    <!--starts navigation bar-->
-        <nav class="flexContainerPrincipal">
-            <a href="../index.html">
+<!--========================== HEADER ============================-->
+<header>
+    <!--================================= NAVBAR =======================================-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
                 <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
             </a>
-            <ul>
-                <li>
-                    <a href="servicios.html">Nuestros Servicios</a>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></button>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/servicios.html">Nuestros servicios</a>
                 </li>
-                <li>
-                    <a href="pedido.html">Pedido</a>
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/pedido.html">Pedidos</a>
                 </li>
-                <li>
-                    <a href="ubicacion.html">Ubicación</a>   
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/ubicacion.html">Ubicación</a>
                 </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/contacto.html">Contacto</a>
                 </li>
-            </ul>
-        </nav>
-<!--ends navigation bar-->
-
-    </header>
-<!--ends header-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--================================= NAVBAR =======================================-->
+        </header>
+    <!--================================== HEADER ================================-->
 
 <!--starts main-->
     <main>
@@ -60,7 +67,7 @@
 <!--ends main-->
 
 
-<!--starts footer-->
+<!--================================ FOOTER ====================================-->
 <footer class="flexContainerFooter">
     <div>
         <h3> 
@@ -80,6 +87,8 @@
         </h3>
     </div>
 </footer>
-<!--ends footer-->
+<!--================================== FOOTER ====================================-->
+<!--bootstrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
