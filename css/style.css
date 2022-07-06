@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 html {
@@ -28,9 +29,8 @@ input[type=number]::-webkit-outer-spin-button {
 /* NAVBAR */
 nav {
     background-color: #FF9BAC;
-    border: 2px solid black;
     margin:auto;
-    width:100%
+    width:100%;
 } 
 nav ul{
     list-style: none;
@@ -41,6 +41,7 @@ nav ul li{
     font-size: 30px;
     font-weight: bold;
     display: inline-block;
+
 } 
 
 nav ul li a{
@@ -58,6 +59,8 @@ nav ul li a:hover {
     border-radius: 5px; 
 
 }
+
+
 
 @media only screen and (max-width:1166px) {
     nav ul li a {
@@ -99,7 +102,6 @@ footer {
     left:0;
     bottom:0;
     margin-top:1rem;
-    
 }
 footer h3 {
     font-size: 20px;
@@ -163,6 +165,7 @@ footer img {
     display:flex;
     flex-flow:column wrap;
     margin:2rem;
+    align-items: center;
 }
 
 .flexContainerForm h1 {
@@ -194,13 +197,8 @@ footer img {
 }
 
 .flexContainerForm textarea {
-    width: 30%;
-    height:350px;
-    padding:10px;
-    margin:5px 0px;
-    margin-left:10px;
-    outline: 0 solid salmon;
-    border:2px solid #000;
+    width: 100%;
+    height:40vh;
     resize: none;
     font-size:18px;
 }
@@ -236,6 +234,10 @@ footer img {
 
 .displayFlex {
     display:flex;
+}
+
+.displayNone {
+    display:none;
 }
 
 /* TEXTO */
@@ -525,6 +527,10 @@ main article figcaption {
 
 /* PEDIDO */
 
+input [type=radio] {
+    display: none;
+}
+
 #tablaPedidos {
     width: 100%;
     margin:1rem auto;
@@ -539,15 +545,16 @@ main article figcaption {
 
 
 #tablaPedidos th{
-    border: rgb(99, 12, 199) solid 1px;
+    border: rgb(146, 102, 196) solid 3px;
+    background: rgb(209,88,106);
+background: radial-gradient(circle, rgba(209,88,106,1) 13%, rgba(227,107,165,1) 40%, rgba(238,135,102,1) 64%, rgba(255,61,0,1) 100%);
     font-size:4rem;
     line-height:2rem;
     padding:10px;
     text-align: center;
-    width:100%;
-    grid-area: "header";
+    width:100vw;
     font-family: 'Amatic SC', cursive;
-    height: 3rem;
+    height: 9vh;
     grid-area: 1/2;
 
 }
@@ -556,22 +563,22 @@ main article figcaption {
     display:grid;
     grid-template-columns:repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-area: "libro";
 
 }
 
-    #tablaPedidos tr td {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        margin:30px;
-        border-right:#000 solid 3px;
-        border: #000 solid 3px;
-        width: auto;
-        font-size: 40px;
-        font-family: 'Amatic SC', cursive;
-        font-weight: 700;
-        color:#000000
+#tablaPedidos tr td {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin:30px;
+    border-right:#000 solid 3px;
+    border: #000 solid 3px;
+    width: auto;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color:#000000;
+    text-align: center;
 }
 
 #tablaPedidos td div label, input {
@@ -584,6 +591,41 @@ main article figcaption {
 
 } 
 
+
+.botonFileUp {
+    border: solid 3px rgb(74, 18, 157);
+    color: rgb(74, 18, 157);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    width:20vw;
+    box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
+
+}
+
+@media only screen and (max-width:1062px) {
+#tablaPedidos tr {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:711px) {
+    #tablaPedidos tr {
+        grid-template-columns: 1fr;
+        }
+    }
+
+@media only screen and (max-width:359px) {
+        #tablaPedidos th {
+            font-size: 3rem;
+        }
+        #tablaPedidos tr td {
+            font-size:2rem;
+            }
+        }
 
 /* Ubicación */
 

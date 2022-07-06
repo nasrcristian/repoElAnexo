@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacé tu pedido - el Anexo </title>
     <link rel="shortcut icon"  href="../img/logo-anexo.png">
+    <!-- bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -50,12 +52,12 @@
                     </th>
                 </tr>
                 <tr>
-                        <td>
-                            <label for="libro1">
+                        <td class="">
+                            <label for="libro1" class="">
                                 Libro verde
                             </label>
                             <label for="libro1">
-                                <img src="../img/libro-verde.jpg" alt="Libro de tapa verde">
+                                <img src="../img/libro-verde.jpg" alt="Libro de tapa verde" class="">
                             </label>
                             <label for="libro1">  
                                 Codigo #001
@@ -326,11 +328,11 @@
                                 <input type="radio" name="faz8" id="doblefaz8">
                             </div>
                             <div>
-                                <label for="blanconegro8">
+                                <label for="blanconegro8" class="btn btn-outline-success">
                                     Blanco y Negro
                                 </label>
-                                <input type="radio" name="color" id="blanconegro8">
-                                <label for="color8">
+                                <input type="radio" name="color" id="blanconegro8" class="btn-check" >
+                                <label for="color8" class="btn btn-outline-success ">
                                     Color
                                 </label>
                                 <input type="radio" name="color" id="color8">
@@ -382,11 +384,11 @@
                 <h2 class="textMedium2 bgBeige colorCrimson">
                     ¿Necesitas un pedido personalizado?
                 </h2>
-                <label for="cargar-archivo" class="textSmall">
+                <label for="cargar-archivo" class="textSmall botonFileUp">
                     Carga tu archivo 
                 </label>
-                <div>
-                    <input type="file" id="cargar-archivo" name="archivo" class="displayBlock">      
+                <input type="file" id="cargar-archivo" name="archivo" class="displayNone">
+                <div>      
                     <label for="pedido-tamaño" class="">
                         Medida de hoja
                     </label>
@@ -397,10 +399,14 @@
                         <option value="Oficio">Oficio</option>
                         <option value="Personalizada">Personalizada (detalle abajo)</option>
                     </select>
+                </div>
+                <div>
                     <label for="pedido-cantidad">
                         Cantidad:
                     </label>
                     <input type="number" id="pedido-cantidad" class="displayInlineBlock">
+                </div>
+                <div>
                     <label for="pedido-simplefaz" class="">
                         Simple Faz
                     </label>
@@ -409,6 +415,8 @@
                         Doble Faz
                     </label>
                     <input type="radio" name="ped-faz" id="pedido-doblefaz" class="displayInlineBlock">
+                </div> 
+                <div>
                     <label for="pedido-blanconegro">
                         Blanco y Negro
                     </label>
@@ -416,7 +424,9 @@
                     <label for="pedido-color">
                         Color
                     </label>
-                    <input type="radio" name="ped-color" id="pedido-color" class="displayInlineBlock">        
+                    <input type="radio" name="ped-color" id="pedido-color" class="displayInlineBlock">
+                </div>
+                <div>        
                     <label for="detalle-pedido" class="displayBlock textMedium2 colorPurple"> Especificaciones extra del pedido: 
                     </label>
                     <textarea name="detalle-pedido" id="detalle-pedido" cols="30" rows="10" class="displayBlock" > 
@@ -462,5 +472,8 @@
     </div>
 </footer>
 <!--ends footer-->
+
+<!--bootstrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
