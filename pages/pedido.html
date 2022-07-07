@@ -387,18 +387,20 @@
             </table>
 <!--======================================= TABLE =====================================-->
 
-<!--file upload-->
-            <section class="flexContainerForm">
-                <h2 class="textMedium2 bgBeige colorCrimson">
+<!--================================ file upload ===============================-->
+            <section class="d-flex" id="flexFormFlow">
+                <h2 class="my-2 py-3">
                     ¿Necesitas un pedido personalizado?
                 </h2>
-                <label for="cargar-archivo" class="textSmall botonFileUp">
+                <label for="cargar-archivo" class="botonFileUp d-block my-3">
                     Carga tu archivo 
                 </label>
-                <input type="file" id="cargar-archivo" name="archivo" class="displayNone">
-                <div>      
-                    <label for="pedido-tamaño" class="">
-                        Medida de hoja
+                <div class="px-5">
+                <input type="file" id="cargar-archivo" name="archivo" class="d-block inputFileUp my-3 px-5">
+                </div>
+                <div class="d-block">      
+                    <label for="pedido-tamaño" class="m-auto">
+                        Medida de hoja:
                     </label>
                     <select name="pedido-tamaño" id="pedido-tamaño" class="">
                         <option value="A4">A4</option> 
@@ -408,52 +410,68 @@
                         <option value="Personalizada">Personalizada (detalle abajo)</option>
                     </select>
                 </div>
-                <div>
+                <div class="d-block my-3">
                     <label for="pedido-cantidad">
                         Cantidad:
                     </label>
-                    <input type="number" id="pedido-cantidad" class="displayInlineBlock">
+                    <input type="number" id="pedido-cantidad" class="">
                 </div>
-                <div>
-                    <label for="pedido-simplefaz" class="">
+                <div class="d-block m-2">
+                    <label for="pedido-simplefaz" class="me-1">
                         Simple Faz
                     </label>
-                    <input type="radio" name="ped-faz" id="pedido-simplefaz">
-                    <label for="pedido-doblefaz">
+                    <input type="radio" name="ped-faz" id="pedido-simplefaz" class="me-3">
+                    <label for="pedido-doblefaz" class="me-1">
                         Doble Faz
                     </label>
-                    <input type="radio" name="ped-faz" id="pedido-doblefaz" class="displayInlineBlock">
-                </div> 
-                <div>
-                    <label for="pedido-blanconegro">
+                    <input type="radio" name="ped-faz" id="pedido-doblefaz" class="me-2">
+                </div>
+                <div class="d-block m-2">
+                    <label for="pedido-blanconegro" class="me-1">
                         Blanco y Negro
                     </label>
-                    <input type="radio" name="ped-color" id="pedido-blanconegro">
-                    <label for="pedido-color">
+                    <input type="radio" name="ped-color" id="pedido-blanconegro" class="me-3">
+                    <label for="pedido-color" class="me-1">
                         Color
                     </label>
-                    <input type="radio" name="ped-color" id="pedido-color" class="displayInlineBlock">
+                    <input type="radio" name="ped-color" id="pedido-color" class="me-4">
                 </div>
-                <div>        
-                    <label for="detalle-pedido" class="displayBlock textMedium2 colorPurple"> Especificaciones extra del pedido: 
+                <div class="my-2">        
+                    <label for="detalle-pedido" class="d-block"> Especificaciones extra del pedido: 
                     </label>
                     <textarea name="detalle-pedido" id="detalle-pedido" cols="30" rows="10" class="displayBlock" > 
                     </textarea>
+                </div class="form-group">
+                    <h3 class="p-3">Datos de contacto:</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="nombre" class="d-block">
+                                Nombre:
+                            </label>
+                            <input type="text" id="nombre" required class="d-inline contactoInputs form-control"> 
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="d-block">
+                                Apellido:
+                            </label>
+                            <input type="text" id="apellido" required class="d-inline contactoInputs form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="telefono" class="d-block">
+                                Numero de telefono:
+                            </label>
+                            <input type="number" id="telefono" required class="contactoInputs form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="d-block">
+                                Correo electronico:
+                            </label>
+                            <input type="email" id="mail" required class="contactoInputs form-control">
+                        </div>
                 </div>
-                <h3>Datos de contacto:</h3>
-                <label for="nombre">
-                    Nombre:
-                </label>
-                <input type="text" id="nombre" required>
-                <label for="apellido">
-                    Apellido:
-                </label>
-                <input type="text" id="apellido" required>
-                <label for="telefono">
-                    Numero de telefono:
-                </label>
-                <input type="number" id="telefono" required>
-                <input type="submit">
+                <input type="submit" class="my-3 p-2 btnSubmit">
             </section>
         </form>
     </main>

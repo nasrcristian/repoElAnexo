@@ -81,6 +81,7 @@ footer {
     position: relative;
     bottom: 0;
     left: 0;
+    overflow-y: hidden;
 }
 
 footer h3 {
@@ -249,6 +250,11 @@ main article figcaption {
     height:auto;
 } 
 
+@media only screen and (max-width:1112px) {
+    #tablaPedidos tr td {
+        font-size: 35px;
+    }
+}
 @media only screen and (max-width:1062px) {
     #tablaPedidos tr {
         grid-template-columns: 1fr 1fr;
@@ -258,6 +264,128 @@ main article figcaption {
     }
 }
 
+/* ======================== FORMULARIO ======================*/
+
+#flexFormFlow {
+    flex-flow:  column wrap;
+    align-items: center;
+}
+
+#flexFormFlow h2 {
+    color:#9C004D;
+    font-size: 2rem;
+    background-color: rgba(250, 234, 215, 0.563);
+    height: 10vh;
+    border: #9C004D solid 3px;
+}
+
+#flexFormFlow div label, select, input {
+    font-size: 20px;
+}
+
+
+#flexFormFlow input[type=number] {
+    height: 3vh;
+}
+#flexFormFlow input[type=text] {
+    height: 3vh;
+}
+
+#flexFormFlow input[type=email] {
+    height: 3vh;
+}
+
+#flexFormFlow textarea {
+    width: 40vw;
+    height:40vh;
+    resize: none;
+    font-size:18px;
+    outline: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#flexFormFlow h3 {  
+    color: blueviolet;
+    border-radius: 33px 33px 33px 33px;
+    -webkit-border-radius: 33px 33px 33px 33px;
+    -moz-border-radius: 33px 33px 33px 33px;;
+    background: rgba(197,20,58,0.5);
+    background: linear-gradient(131deg,rgba(197,20,58,0.5) 20%, rgba(180,16,130,0.5) 60%, rgba(255,0,131,0.5) 99%);
+    background: -webkit-linear-gradient(131deg,rgba(197,20,58,0.5) 20%, rgba(180,16,130,0.5) 60%, rgba(255,0,131,0.5) 99%);
+    background: -moz-linear-gradient(131deg,rgba(197,20,58,0.5) 20%, rgba(180,16,130,0.5) 60%, rgba(255,0,131,0.5) 99%);
+    border: #7c14c5 solid 1px;
+}
+
+#flexFormFlow div label {
+    color:#9C004D;
+}
+
+
+.btnSubmit {
+    border-radius: 10px;
+    border: solid 1px #4e04988c;
+    color:blueviolet;
+    background-color: #a758f642;
+}
+
+.btnSubmit:hover {
+    color: rgb(198, 104, 145);
+    border-radius: 10px;
+    border: solid 1px #81689a8c;;
+    background-color: #c08cf442;
+}
+
+.contactoInputs {
+    width:40vw;
+    height:100%;
+    font-size: 1rem;
+}
+
+.botonFileUp {
+    border: solid 3px rgb(74, 18, 157);
+    color: rgb(74, 18, 157);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    width:15vw;
+    box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
+}
+
+.inputFileUp {
+    color: rgb(175, 18, 94);
+    border-radius: 8px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    width:50vw;
+    height:50vh;
+    border: #9C004D solid 5px;
+    background-image: url(../img);
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #flexFormFlow .botonFileUp {
+        width: 50vw;
+    }
+
+    #flexFormFlow textarea {
+        width: 80vw;
+    }
+
+    #flexFormFlow div div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 @media only screen and (max-width:711px) {
     #tablaPedidos tr {
         grid-template-columns: 1fr;
@@ -290,11 +418,45 @@ main article figcaption {
     animation-timing-function: ease-out;
 }
 
+.ubicacionFlex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main section h2 {
+    font-family: 'Indie Flower', cursive;
+    color:#9C004D;
+}
+
+main section h3 {
+    font-family: 'Amatic SC', cursive;
+    color:#6f1274e4
+}
+
+
+main section iframe {
+    border:#430581 solid 3px;
+    width:60vw;
+    height:60vh;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .ubicacionFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    .ubicacionFlex iframe {
+        width:90vw;
+        height:80vh;
+    }
+}
+
 
 /* ============== ANIMACIONES =========== */
-
-
-/* ANIMACIONES */
 
 @keyframes aparicionNav {
     0% {
