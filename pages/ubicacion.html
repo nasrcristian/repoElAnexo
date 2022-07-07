@@ -6,57 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como llegar - el Anexo</title>
     <link rel="shortcut icon"  href="../img/logo-anexo.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
-<!--starts header-->
-    <header>
-
-<!--starts navigation bar-->
-            <nav class="flexContainerPrincipal">
-                <a href="../index.html">
-                    <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
-                </a>
-                <ul>
-                    <li>
-                        <a href="servicios.html">Nuestros Servicios</a>    
-                    </li>
-                    <li>
-                        <a href="pedido.html">Pedido</a>
-                    </li>
-                    <li>
-                        <a href="ubicacion.html">Ubicación</a>   
-                    </li>
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
+<!--========================== HEADER ============================-->
+<header>
+    <!--================================= NAVBAR =======================================-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></button>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/servicios.html">Nuestros servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/pedido.html">Pedidos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/contacto.html">Contacto</a>
+                </li>
                 </ul>
-            </nav>
-<!--ends navigation bar-->
-
+            </div>
+        </div>
+    </nav>
+    <!--================================= NAVBAR =======================================-->
         </header>
-<!--ends header-->
+    <!--================================== HEADER ================================-->
 
 <!--starts main-->
-    <main class= "flexContainerPrincipal">
-        <section>
-            <h2 class="textMedium textCenter">
+    <main class= "d-flex ubicacionFlex my-4">
+        <section class="m-3">
+            <h2 class="text-center">
                 Horario de atención:
             </h2>
-            <h3 class="textAmatic textMedium textCenter">
+            <h3 class="text-center">
                 Lunes a Viernes: 10hs a 16hs.
             </h3>
         </section>
-        <section>
-            <h2 class="textMedium textCenter">
+        <section class="m-3">
+            <h2 class="text-center">
                 Nos encontramos en:
             </h2>
-            <h3 class="textMedium textAmatic">
+            <h3 class="textAmatic text-center">
                 Gral. Mariano Necochea 325, Florencio Varela, Buenos Aires.
             </h3>
         </section>
-        <section>
+        <section class="">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3277.2693726430743!2d-58.2741928!3d-34.7739934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ea59dbdd4f3%3A0xf829a8e2b84781a1!2sGral.%20Mariano%20Necochea%20325%2C%20B1888%20AUG%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653960295469!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="entradaMapa">
             </iframe>
         </section>
@@ -64,7 +71,7 @@
     </main>
 <!--ends main-->
 
-<!--starts footer-->
+<!--================================ FOOTER ====================================-->
 <footer class="flexContainerFooter">
     <div>
         <h3> 
@@ -84,6 +91,8 @@
         </h3>
     </div>
 </footer>
-<!--ends footer-->
+<!--================================== FOOTER ====================================-->
+<!--bootstrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

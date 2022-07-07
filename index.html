@@ -6,70 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>el Anexo - Gráfica Integral</title>
     <link rel="shortcut icon"  href="./img/logo-anexo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/animate.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-<!-- starts header -->
-    <header>
-<!--starts navigation bar-->
-        <nav class="flexContainerPrincipal  " >
-            <a href="index.html">
-                <img src="./img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
+<!--========================== HEADER ============================-->
+<header>
+    <!--================================= NAVBAR =======================================-->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
             </a>
-            <ul>
-                <li>
-                    <a href="./pages/servicios.html">Nuestros Servicios</a>    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent"></button>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link mx-5 mx-md-3" href="./pages/servicios.html">Nuestros servicios</a>
                 </li>
-                <li>
-                    <a href="./pages/pedido.html">Pedido</a>
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="./pages/pedido.html">Pedidos</a>
                 </li>
-                <li>
-                    <a href="./pages/ubicacion.html">Ubicación</a>   
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="./pages/ubicacion.html">Ubicación</a>
                 </li>
-                <li>
-                    <a href="./pages/contacto.html">Contacto</a>
+                <li class="nav-item">
+                    <a class="nav-link mx-5 mx-md-3" href="./pages/contacto.html">Contacto</a>
                 </li>
-            </ul>
-        </nav>
-<!--ends navigation bar-->
-        <h1 class="">
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--================================= NAVBAR =======================================-->
+        <h1 class="pt-3">
             ¿Quienes Somos? 
         </h1>
     </header>
-<!-- ends header--> 
+    <!--================================== HEADER ================================-->
 
 <!--starts main-->
-    <main class="flexContainerPrincipal gridIndexMain animacionAparecer">
-        <article>
-            <figure>
+    <main class="container-fluid row">
+        <article class="mt-4 my-md-5 col-xs-12 col-md-6">
+            <figure class="d-flex">
                 <img src="./img/brush-pencil-icon.png" alt="Ícono de un lápiz y un pincel" class="animate__animated animate__bounceInLeft"> 
-                <figcaption>
+                <figcaption class="ms-2"> 
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur vel voluptates est cupiditate illo, odit cum ex reiciendis dolore ut voluptas laudantium maiores, error corrupti quae, incidunt minus asperiores dolorum.
                 </figcaption>
             </figure>
         </article>
-        <article>
-            <figure>
+        <article class="my-md-5 col-xs-12 col-md-6">
+            <figure class="d-flex">
                 <img src="./img/image-icon.png" alt="Ícono de una fotografía sobre un paisaje" class="animate__animated animate__bounceInRight"> 
-                <figcaption>
+                <figcaption class="ms-2">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi vero quasi, officia eius velit culpa itaque aliquid est eaque nam, quis, tempora quia nobis aspernatur magni obcaecati accusantium! Quod, doloremque?
                 </figcaption>
             </figure>
         </article>
-        <article>
-            <figure>
+        <article class="my-md-5 col-xs-12 col-md-6">
+            <figure class="d-flex">
                 <img src="./img/compose-icon.png" alt="Ícono de una hoja papel escrita con un lápiz" class="animate__animated animate__bounceInLeft"> 
-                <figcaption>
+                <figcaption class="ms-2">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit error perspiciatis similique ratione, alias, optio voluptatem nam ab nobis ducimus velit suscipit dolores, expedita sequi mollitia repellat veritatis et odit.
                 </figcaption>   
             </figure>
         </article>
-        <article>
-            <figure>
+        <article class="my-md-5 col-xs-12 col-md-6">
+            <figure class="d-flex">
                 <img src="./img/Pantone-icon.png" alt="Ícono de un una hoja de papel escrita con la esquina derecha doblada" class="animate__animated animate__bounceInRight">
-                <figcaption>
+                <figcaption class="ms-2">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam animi provident delectus eius, excepturi soluta error vitae rerum repellat molestiae ratione! Soluta, quae? Accusamus reiciendis tenetur porro iusto nulla. Atque.
             </figcaption> 
             </h2>
@@ -77,27 +85,28 @@
     </main>
 <!-- ends main-->
 
-<!--starts footer-->
-    <footer class="flexContainerFooter">
-        <div>
-            <h3> 
-                Nuestras redes
-            </h3>
-            <a href="https://www.facebook.com/elanexografica/" target="_blank"><img src="./img/facebook.png" alt="logo de Facebook"></a>
-            <a href="https://www.instagram.com/el_anexo_grafica/" target="_blank"><img src="./img/instagram.png" alt="logo de Instagram"></a>
-            <a href="https://wa.me/5491122765693/" target="_blank"><img src="./img/WhatsApp-icon.png" alt="logo de Whatsapp"></a> 
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXVZgVMQrdNHCRBJHvgdKbbGNzfbLxlBZVlSGNVVwxrSRqRjGcRCNtWNnlZMqdhvCbhQX" target="_blank"><img src="./img/Gmail-icon.png" alt="logo de Gmail"></a>
-        </div> 
-        <div>
-            <h3>
-                Nos encontramos en:
-                <a href="https://www.google.com/maps/place/Gral.+Mariano+Necochea+325,+B1888+AUG,+Provincia+de+Buenos+Aires/@-34.7739934,-58.2741928,17z/data=!4m15!1m9!3m8!1s0x95a32ea59dbdd4f3:0xf829a8e2b84781a1!2sGral.+Mariano+Necochea+325,+B1888+AUG,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.7739934!4d-58.2720041!14m1!1BCgIgAQ!3m4!1s0x95a32ea59dbdd4f3:0xf829a8e2b84781a1!8m2!3d-34.7739934!4d-58.2720041" target="_blank">
-                Gral. Mariano Necochea 325, Florencio Varela, Buenos Aires
-                </a>
-            </h3>
-        </div>
-    </footer>
-    
-<!--ends footer-->
+<!--================================ FOOTER ====================================-->
+<footer class="flexContainerFooter">
+    <div>
+        <h3> 
+            Nuestras redes
+        </h3>
+        <a href="https://www.facebook.com/elanexografica/" target="_blank"><img src="./img/facebook.png" alt="logo de Facebook"></a>
+        <a href="https://www.instagram.com/el_anexo_grafica/" target="_blank"><img src="./img/instagram.png" alt="logo de Instagram"></a>
+        <a href="https://wa.me/5491122765693/" target="_blank"><img src="./img/WhatsApp-icon.png" alt="logo de Whatsapp"></a> 
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXVZgVMQrdNHCRBJHvgdKbbGNzfbLxlBZVlSGNVVwxrSRqRjGcRCNtWNnlZMqdhvCbhQX" target="_blank"><img src="./img/Gmail-icon.png" alt="logo de Gmail"></a>
+    </div> 
+    <div>
+        <h3>
+            Nos encontramos en:
+            <a href="https://www.google.com/maps/place/Gral.+Mariano+Necochea+325,+B1888+AUG,+Provincia+de+Buenos+Aires/@-34.7739934,-58.2741928,17z/data=!4m15!1m9!3m8!1s0x95a32ea59dbdd4f3:0xf829a8e2b84781a1!2sGral.+Mariano+Necochea+325,+B1888+AUG,+Provincia+de+Buenos+Aires!3b1!8m2!3d-34.7739934!4d-58.2720041!14m1!1BCgIgAQ!3m4!1s0x95a32ea59dbdd4f3:0xf829a8e2b84781a1!8m2!3d-34.7739934!4d-58.2720041" target="_blank">
+            Gral. Mariano Necochea 325, Florencio Varela, Buenos Aires
+            </a>
+        </h3>
+    </div>
+</footer>
+<!--================================== FOOTER ====================================-->
+<!--bootstrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -6,274 +6,401 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacé tu pedido - el Anexo </title>
     <link rel="shortcut icon"  href="../img/logo-anexo.png">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animate.css">
 </head>
 
 <body>
-<!--starts header-->
+<!--========================== HEADER ============================-->
     <header>
-
-<!--starts navigation bar-->
-        <nav class="flexContainerPrincipal">
-            <a href="../index.html">
-                <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
-            </a>
-            <ul>
-                <li>
-                    <a href="servicios.html">Nuestros Servicios</a>    
-                </li>
-                <li>
-                    <a href="pedido.html">Pedido</a>
-                </li>
-                <li>
-                    <a href="ubicacion.html">Ubicación</a>   
-                </li>
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
+<!--================================= NAVBAR =======================================-->
+<nav class="navbar navbar-expand-md">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"></button>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link mx-5 mx-md-3" href="../pages/servicios.html">Nuestros servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-5 mx-md-3" href="../pages/pedido.html">Pedidos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-5 mx-md-3" href="../pages/ubicacion.html">Ubicación</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-5 mx-md-3" href="../pages/contacto.html">Contacto</a>
+            </li>
             </ul>
-        </nav>
-<!--ends navigation bar-->
-
+        </div>
+    </div>
+</nav>
+<!--================================= NAVBAR =======================================-->
     </header>
-<!--ends header-->
+<!--================================== HEADER ================================-->
 
-<!--starts main-->
+<!--============================= MAIN ====================================-->
     <main>
 
-<!--starts table-->
+<!--==================== TABLE =======================-->
         <form action="pedido.php">
             <table id="tablaPedidos">
                 <tr>
-                    <th>
-                        <h1>Nuestros Pedidos</h1> 
+                    <th class="">
+                        <h2 class="py-2 py-xxl-3">
+                            Nuestros Pedidos
+                        </h2>
                     </th>
                 </tr>
                 <tr>
-                    <td>
-                        <label for="libro1">
-                            Libro verde
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro1">
-                            <img src="../img/libro-verde.jpg" alt="Libro de tapa verde">
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro1">  
-                            Codigo #001
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro1">
-                            Cantidad:
-                        </label>
-                        <input type="number" id="libro1">
-                    </td>
-                    <td>
-                        <label for="simplefaz1">
-                            Simple Faz
-                        </label>
-                        <input type="radio" name="faz1" id="simplefaz1">
-                        <label for="doblefaz1">
-                            Doble Faz
-                        </label>
-                        <input type="radio" name="faz1" id="doblefaz1">
-                    </td>
-                    <td>
-                        <label for="blanconegro1">
-                            Blanco y Negro
-                        </label>
-                        <input type="radio" name="color1" id="blanconegro1">
-                        <label for="color1">
-                            Color
-                        </label>
-                        <input type="radio" name="color1" id="color1">
-                    </td>
-                    <td>
-                        Precio x unidad: $350
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="libro2">
-                            Biología y Conocimiento - Jean Piaget
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro2">
-                            <img src="../img/libro-blanco.png" alt="Tapa de libro 'Biología y Conocimiento' de Jean Piaget">
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro2">  
-                            Codigo #002
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro2">
-                            Cantidad:
-                        </label>
-                        <input type="number" id="libro2">
-                    </td>
-                    <td>
-                        <label for="simplefaz2">
-                            Simple Faz
-                        </label>
-                        <input type="radio" name="faz2" id="simplefaz2">
-                        <label for="doblefaz2">
-                            Doble Faz
-                        </label>
-                        <input type="radio" name="faz2" id="doblefaz2">
-                    </td>
-                    <td>
-                        <label for="blanconegro2">
-                            Blanco y Negro
-                        </label>
-                        <input type="radio" name="color2" id="blanconegro2">
-                        <label for="color2">
-                            Color
-                        </label>
-                        <input type="radio" name="color2" id="color2">
-                    </td>
-                    <td>
-                        Precio x unidad: $400
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="libro2">
-                            1984 - George Orwell
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro3">
-                            <img src="../img/libro-rojo.jpg" alt="Tapa de libro '1984' de George Orwell">
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro3">  
-                            Codigo #003
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro3">
-                            Cantidad:
-                        </label>
-                        <input type="number" id="libro3">
-                    </td>
-                    <td>
-                        <label for="simplefaz3">
-                            Simple Faz
-                        </label>
-                        <input type="radio" name="faz3" id="simplefaz3">
-                        <label for="doblefaz3">
-                            Doble Faz
-                        </label>
-                        <input type="radio" name="faz3" id="doblefaz3">
-                    </td>
-                    <td>
-                        <label for="blanconegro3">
-                            Blanco y Negro
-                        </label>
-                        <input type="radio" name="color3" id="blanconegro3">
-                        <label for="color3">
-                            Color
-                        </label>
-                        <input type="radio" name="color3" id="color3">
-                    </td>
-                    <td>
-                        Precio x unidad: $600
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="libro4">
-                            Libro azul
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro4">
-                            <img src="../img/libro-azul.png" alt="Libro de tapa azul">
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro4">  
-                            Codigo #004
-                        </label>
-                    </td>
-                    <td>
-                        <label for="libro4">
-                            Cantidad:
-                        </label>
-                        <input type="number" id="libro4">
-                    </td>
-                    <td>
-                        <label for="simplefaz4">
-                            Simple Faz
-                        </label>
-                        <input type="radio" name="faz4" id="simplefaz4">
-                        <label for="doblefaz4">
-                            Doble Faz
-                        </label>
-                        <input type="radio" name="faz4" id="doblefaz4">
-                    </td>
-                    <td>
-                        <label for="blanconegro4">
-                            Blanco y Negro
-                        </label>
-                        <input type="radio" name="color" id="blanconegro4">
-                        <label for="color4">
-                            Color
-                        </label>
-                        <input type="radio" name="color" id="color4">
-                    </td>
-                    <td>
-                        Precio x unidad: $200
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="caja-lapiz">
-                            Caja de lapices 
-                        </label>
-                    </td>
-                    <td>
-                        <label for="caja-lapiz">
-                            <img src="../img/caja-lapices.png" alt="Caja de 12 lapices de colores 'Faber Castell'">
-                        </label>
-                    </td>
-                    <td>
-                        <label for="caja-lapiz">  
-                            Codigo #005
-                        </label>
-                    </td>
-                    <td>
-                        <label for="caja-lapiz">
-                            Cantidad:
-                        </label>
-                        <input type="number" id="caja-lapiz">
-                    </td>
-                    <td>
-                        Precio por caja: $90
-                    </td>
-                </tr>
+                        <td class="">
+                            <label for="libro1" class="">
+                                Libro verde
+                            </label>
+                            <label for="libro1">
+                                <img src="../img/libro-verde.jpg" alt="Libro de tapa verde" class="">
+                            </label>
+                            <label for="libro1">  
+                                Codigo #001
+                            </label>
+                            <label for="libro1">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro1">
+                            <div>
+                                <label for="simplefaz1">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz1" id="simplefaz1">
+                                <label for="doblefaz1">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz1" id="doblefaz1">
+                            </div>
+                            <div>
+                                <label for="blanconegro1">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color1" id="blanconegro1">
+                                <label for="color1">
+                                    Color
+                                </label>
+                                <input type="radio" name="color1" id="color1">
+                            </div>
+                            Precio x unidad: $350
+                        </td>
+                        <td>
+                            <label for="libro2">
+                                Biología y Conocimiento - Jean Piaget
+                            </label>
+                            <label for="libro2">
+                                <img src="../img/libro-blanco.png" alt="Tapa de libro 'Biología y Conocimiento' de Jean Piaget">
+                            </label>
+                            <label for="libro2">  
+                                Codigo #002
+                            </label>
+                            <label for="libro2">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro2">
+                            <div>
+                                <label for="simplefaz2">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz2" id="simplefaz2">
+                                <label for="doblefaz2">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz2" id="doblefaz2"> 
+                            </div>
+                            <div>
+                                <label for="blanconegro2">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color2" id="blanconegro2">
+                                <label for="color2">
+                                    Color
+                                </label>
+                                <input type="radio" name="color2" id="color2">
+                            </div>
+                            Precio x unidad: $400
+                        </td>
+                        <td>
+                            <label for="libro2">
+                                1984 - George Orwell
+                            </label>
+                            <label for="libro3">
+                                <img src="../img/libro-rojo.jpg" alt="Tapa de libro '1984' de George Orwell">
+                            </label>
+                            <label for="libro3">  
+                                Codigo #003
+                            </label>
+                            <label for="libro3">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro3">
+                            <div>
+                                <label for="simplefaz3">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz3" id="simplefaz3">
+                                <label for="doblefaz3">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz3" id="doblefaz3">
+                            </div>
+                            <div> 
+                                <label for="blanconegro3">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color3" id="blanconegro3">
+                                <label for="color3">
+                                    Color
+                                </label>
+                                <input type="radio" name="color3" id="color3">
+                            </div>
+                            Precio x unidad: $600
+                        </td>
+                        <td>
+                            <label for="libro4">
+                                Libro azul
+                            </label>
+                            <label for="libro4">
+                                <img src="../img/libro-azul.png" alt="Libro de tapa azul">
+                            </label>
+                            <label for="libro4">  
+                                Codigo #004
+                            </label>
+                            <label for="libro4">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro4">
+                            <div>
+                                <label for="simplefaz4">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz4" id="simplefaz4">
+                                <label for="doblefaz4">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz4" id="doblefaz4">
+                            </div>
+                            <div>
+                                <label for="blanconegro4">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color" id="blanconegro4">
+                                <label for="color4">
+                                    Color
+                                </label>
+                                <input type="radio" name="color" id="color4">
+                            </div>
+                            Precio x unidad: $200
+                        </td>
+                        <td>
+                                <label for="libro5">
+                                    Anatomía humana - Editorial panamericana
+                                </label>
+                                <label for="libro5">
+                                    <img src="../img/libro-anatomia.png" alt="Libro de anatomía humana tomo 1. Editorial medica panamericana. En la imagen se visualiza los vasos sanguineos de una mano">
+                                </label>
+                                <label for="libro5">  
+                                    Codigo #005
+                                </label>
+                                <label for="libro5">
+                                    Cantidad:
+                                </label>
+                                <input type="number" id="libro5">
+                                <div>
+                                    <label for="simplefaz5">
+                                        Simple Faz
+                                    </label>
+                                    <input type="radio" name="faz5" id="simplefaz5">
+                                    <label for="doblefaz5">
+                                        Doble Faz
+                                    </label>
+                                    <input type="radio" name="faz5" id="doblefaz5">
+                                </div>
+                                <div>
+                                    <label for="blanconegro5">
+                                        Blanco y Negro
+                                    </label>
+                                    <input type="radio" name="color" id="blanconegro5">
+                                    <label for="color5">
+                                        Color
+                                    </label>
+                                    <input type="radio" name="color" id="color5">
+                                </div>
+                                Precio x unidad: $480
+                        <td>
+                            <label for="libro6">
+                                Atlas de Anatomía Humana - Frank H. Netter
+                            </label>
+                            <label for="libro6">
+                                <img src="../img/atlas-anatomia.jpg" alt="Atlas de anatomía humana, libro de tapa negra con la ilustración de un corazón.">
+                            </label>
+                            <label for="libro6">  
+                                Codigo #006
+                            </label>
+                            <label for="libro6">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro6">
+                            <div>
+                                <label for="simplefaz6">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz6" id="simplefaz6">
+                                <label for="doblefaz6">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz6" id="doblefaz6">
+                            </div>
+                            <div>
+                                <label for="blanconegro6">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color" id="blanconegro6">
+                                <label for="color6">
+                                    Color
+                                </label>
+                                <input type="radio" name="color" id="color6">
+                            </div>
+                            Precio x unidad: $800
+                        </td>
+                        <td>
+                            <label for="libro7">
+                                Estadística y Matemática
+                            </label>
+                            <label for="libro7">
+                                <img src="../img/libro-matematica.png" alt="Libro de tapa azul que lee Estadistica y Matematica">
+                            </label>
+                            <label for="libro7">  
+                                Codigo #007
+                            </label>
+                            <label for="libro7">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro7">
+                            <div>
+                                <label for="simplefaz7">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz7" id="simplefaz7">
+                                <label for="doblefaz7">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz7" id="doblefaz7">
+                            </div>
+                            <div>
+                                <label for="blanconegro7">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color" id="blanconegro7">
+                                <label for="color7">
+                                    Color
+                                </label>
+                                <input type="radio" name="color" id="color7">
+                            </div>
+                            Precio x unidad: $550
+                        </td>
+                        <td>
+                            <label for="libro8">
+                                Filosofia Aplicada Experiencial
+                            </label>
+                            <label for="libro8">
+                                <img src="../img/libro-filosofia.jpg" alt="Filosofia aplicada experiencia, mas alla del postureo filosofico. Escrito por Jose Barrientos Rastrojo">
+                            </label>
+                            <label for="libro8">  
+                                Codigo #008
+                            </label>
+                            <label for="libro8">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro8">
+                            <div>
+                                <label for="simplefaz8">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz8" id="simplefaz8">
+                                <label for="doblefaz8">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz8" id="doblefaz8">
+                            </div>
+                            <div>
+                                <label for="blanconegro8" class="">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color" id="blanconegro8" class="" >
+                                <label for="color8" class="">
+                                    Color
+                                </label>
+                                <input type="radio" name="color" id="color8">
+                            </div>
+                            Precio x unidad: $440
+                        </td>
+                        <td>
+                            <label for="libro9">
+                                Breve Historia Contemporánea de la Argentina
+                            </label>
+                            <label for="libro9">
+                                <img src="../img/libro-historia.png" alt="Libro de Luis Alberto Romero, 'Breve Historia Contemporanea de la Argentina 1916-2010'">
+                            </label>
+                            <label for="libro9">  
+                                Codigo #009
+                            </label>
+                            <label for="libro9">
+                                Cantidad:
+                            </label>
+                            <input type="number" id="libro9">
+                            <div>
+                                <label for="simplefaz9">
+                                    Simple Faz
+                                </label>
+                                <input type="radio" name="faz9" id="simplefaz9">
+                                <label for="doblefaz9">
+                                    Doble Faz
+                                </label>
+                                <input type="radio" name="faz9" id="doblefaz9">
+                            </div>
+                            <div>
+                                <label for="blanconegro9">
+                                    Blanco y Negro
+                                </label>
+                                <input type="radio" name="color" id="blanconegro9">
+                                <label for="color9">
+                                    Color
+                                </label>
+                                <input type="radio" name="color" id="color9">
+                            </div>
+                            Precio x unidad: $1300
+                        </td>
+            </tr>
             </table>
-<!--ends table-->
+<!--======================================= TABLE =====================================-->
 
-<!--file upload-->
-            <section class="flexContainerForm">
-                <h2 class="textMedium2 bgBeige colorCrimson">
+<!--================================ file upload ===============================-->
+            <section class="d-flex" id="flexFormFlow">
+                <h2 class="my-2 py-3">
                     ¿Necesitas un pedido personalizado?
                 </h2>
-                <label for="cargar-archivo" class="textSmall">
+                <label for="cargar-archivo" class="botonFileUp d-block my-3">
                     Carga tu archivo 
                 </label>
-                <div>
-                    <input type="file" id="cargar-archivo" name="archivo" class="displayBlock">      
-                    <label for="pedido-tamaño" class="">
-                        Medida de hoja
+                <div class="px-5">
+                <input type="file" id="cargar-archivo" name="archivo" class="d-block inputFileUp my-3 px-5">
+                </div>
+                <div class="d-block">      
+                    <label for="pedido-tamaño" class="m-auto">
+                        Medida de hoja:
                     </label>
                     <select name="pedido-tamaño" id="pedido-tamaño" class="">
                         <option value="A4">A4</option> 
@@ -282,51 +409,75 @@
                         <option value="Oficio">Oficio</option>
                         <option value="Personalizada">Personalizada (detalle abajo)</option>
                     </select>
+                </div>
+                <div class="d-block my-3">
                     <label for="pedido-cantidad">
                         Cantidad:
                     </label>
-                    <input type="number" id="pedido-cantidad" class="displayInlineBlock">
-                    <label for="pedido-simplefaz" class="">
+                    <input type="number" id="pedido-cantidad" class="">
+                </div>
+                <div class="d-block m-2">
+                    <label for="pedido-simplefaz" class="me-1">
                         Simple Faz
                     </label>
-                    <input type="radio" name="ped-faz" id="pedido-simplefaz">
-                    <label for="pedido-doblefaz">
+                    <input type="radio" name="ped-faz" id="pedido-simplefaz" class="me-3">
+                    <label for="pedido-doblefaz" class="me-1">
                         Doble Faz
                     </label>
-                    <input type="radio" name="ped-faz" id="pedido-doblefaz" class="displayInlineBlock">
-                    <label for="pedido-blanconegro">
+                    <input type="radio" name="ped-faz" id="pedido-doblefaz" class="me-2">
+                </div>
+                <div class="d-block m-2">
+                    <label for="pedido-blanconegro" class="me-1">
                         Blanco y Negro
                     </label>
-                    <input type="radio" name="ped-color" id="pedido-blanconegro">
-                    <label for="pedido-color">
+                    <input type="radio" name="ped-color" id="pedido-blanconegro" class="me-3">
+                    <label for="pedido-color" class="me-1">
                         Color
                     </label>
-                    <input type="radio" name="ped-color" id="pedido-color" class="displayInlineBlock">        
-                    <label for="detalle-pedido" class="displayBlock textMedium2 colorPurple"> Especificaciones extra del pedido: 
+                    <input type="radio" name="ped-color" id="pedido-color" class="me-4">
+                </div>
+                <div class="my-2">        
+                    <label for="detalle-pedido" class="d-block"> Especificaciones extra del pedido: 
                     </label>
                     <textarea name="detalle-pedido" id="detalle-pedido" cols="30" rows="10" class="displayBlock" > 
                     </textarea>
+                </div class="form-group">
+                    <h3 class="p-3">Datos de contacto:</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="nombre" class="d-block">
+                                Nombre:
+                            </label>
+                            <input type="text" id="nombre" required class="d-inline contactoInputs form-control"> 
+                        </div>
+                        <div class="col-md-6">
+                            <label for="apellido" class="d-block">
+                                Apellido:
+                            </label>
+                            <input type="text" id="apellido" required class="d-inline contactoInputs form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="telefono" class="d-block">
+                                Numero de telefono:
+                            </label>
+                            <input type="number" id="telefono" required class="contactoInputs form-control">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="d-block">
+                                Correo electronico:
+                            </label>
+                            <input type="email" id="mail" required class="contactoInputs form-control">
+                        </div>
                 </div>
-                <h3>Datos de contacto:</h3>
-                <label for="nombre">
-                    Nombre:
-                </label>
-                <input type="text" id="nombre" required>
-                <label for="apellido">
-                    Apellido:
-                </label>
-                <input type="text" id="apellido" required>
-                <label for="telefono">
-                    Numero de telefono:
-                </label>
-                <input type="number" id="telefono" required>
-                <input type="submit">
+                <input type="submit" class="my-3 p-2 btnSubmit">
             </section>
         </form>
     </main>
 <!--ends main-->
 
-<!--starts footer-->
+<!--================================ FOOTER ====================================-->
 <footer class="flexContainerFooter">
     <div>
         <h3> 
@@ -346,6 +497,9 @@
         </h3>
     </div>
 </footer>
-<!--ends footer-->
+<!--================================== FOOTER ====================================-->
+
+<!--bootstrap script-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
