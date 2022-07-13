@@ -1,0 +1,29 @@
+.entradaMapa {
+    animation-name: entradaMapa;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+}
+
+.ubicacionFlex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main {
+    section {
+        h2 {
+            font-family:$fuenteTerciaria;
+            color:$colorSecundario;
+        }
+        h3 {
+            font-family:$fuenteSecundaria;
+            color:$colorSecundario;
+        }
+        iframe {
+            border:$colorPrimario solid 3px;
+            width:60vw;
+            height:60vh;
+            border-radius: 20px;
+        }
+    }
+}

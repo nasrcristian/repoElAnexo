@@ -1,0 +1,60 @@
+#tablaPedidos {
+    width: 100%;
+    margin:1rem auto;
+    background-image: linear-gradient(rgba(234, 188, 255, 0.466), rgba(164, 51, 250, 0.219) ), url(../img/textura-acuarela.jpg);
+    background-size:cover;
+    background-position:center;
+    th {
+        display: flex;
+        width:99vw;
+        justify-content: center;
+        h2 {
+            text-align: center;
+            width: 50vw;
+            background: rgba(209, 88, 106, 0.841);
+            background: radial-gradient(circle, rgba(209, 88, 106, 0.832) 13%, rgba(227, 107, 165, 0.855) 40%, rgba(238, 136, 102, 0.79) 64%, rgba(255, 60, 0, 0.807) 100%);
+            font-family:$fuenteSecundaria;
+            height: 8vh;
+            font-size:3rem;
+            line-height:2rem;
+            font-weight: 700;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+    }
+    tr {
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: auto;
+        td {
+            margin:30px;
+            border: #4e0b7577 solid 2px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            width: auto;
+            font-size: 40px;
+            font-family:$fuenteSecundaria;
+            font-weight: 700;
+            color:#000000;
+            text-align: center;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+        }
+    }
+    input[type=number] {
+        height:4vh;
+        font-family:$fuenteTerciaria;
+        font-size:2vh;
+        padding: 5px;
+    }
+    td {
+        div {
+            label {
+                margin: 10px 5px;
+            }
+        }
+    }
+    img {
+        width:15vw;
+        height:auto;
+    }
+}
