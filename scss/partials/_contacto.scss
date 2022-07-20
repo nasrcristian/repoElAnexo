@@ -5,8 +5,7 @@
 }
 
 .ubicacionFlex {
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include flex (flex, row wrap, space-around, flex-start);
 }
 
 main {
@@ -14,10 +13,12 @@ main {
         h2 {
             font-family:$fuenteTerciaria;
             color:$colorSecundario;
+            text-align: center;
         }
         h3 {
             font-family:$fuenteSecundaria;
             color:$colorSecundario;
+            text-align: center;
         }
         iframe {
             border:$colorPrimario solid 3px;

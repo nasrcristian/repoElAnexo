@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image:url(../img/textura-papel.jpg);
+    background-image:radial-gradient(circle, rgba(255,59,145,0.2637429971988795) 24%, rgba(226,105,48,0.3169642857142857) 68%), url(../img/textura-papel.jpg);
     font-family:$fuentePrincipal;
 }
 
@@ -16,44 +16,13 @@ input[type=number]::-webkit-outer-spin-button {
     appearance: none; 
 }
 
-.botonFileUp {
-    border: solid 3px $colorPrimario;
-    color:$colorPrimario;
-    padding: 8px 20px;
-    border-radius: 8px;
-    font-size: 28px;
-    text-align: center;
-    font-family:$fuenteSecundaria;
-    font-weight: 700;
-    width:15vw;
-    box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
-}
-
-.inputFileUp {
-    color:$colorSecundario;
-    border-radius: 8px;
-    font-size: $textoMD!important;
-    text-align: center;
-    font-family:$fuenteSecundaria;
-    font-weight: 700;
-    width: 50vw,!important;
-    height:50vh!important;
-    border: $colorSecundario solid 5px;
-}
-
 .btnSubmit {
-    border-radius: 10px;
-    border: solid 1px #4e04988c;
-    color:$colorPrimario;
-    background-color: #a758f642;
+    @include border (solid 1px #4e04988c, 10px, $colorPrimario, #a758f642);
     height: auto!important;
 }
 
 .btnSubmit:hover {
-    color: rgb(198, 104, 145);
-    border-radius: 10px;
-    border: solid 1px #81689a8c;;
-    background-color: #c08cf442;
+    @include border (solid 1px #725d868c, 10px, rgb(230, 200, 213), #6c1bbd86);
 }
 
 .contactoInputs {

@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Josefin+Sans:wght@300;400&display=swap'); 
-
+@import 'utilities/maps';
+@import 'utilities/mixins';
+@import 'utilities/extends';
+@import 'utilities/maps';
 @import 'partials/variables';
 @import 'partials/commons';
 @import 'partials/animaciones';
 @import 'partials/navbar';
 @import 'partials/footer';
-@import 'partials/formulario';
-@import 'partials/index';
+@import 'partials/quienes';
 @import 'partials/pedidos';
 @import 'partials/contacto';
+@import 'partials/formulario';
 @import 'partials/breakpoints';
 

@@ -46,22 +46,16 @@
                 width: 50vw!important;
                 height: 10vh!important;
             }
-        }
-        #flexFormFlow {
             textarea {
                 width: 80vw;
             }
         }   
-        #flexFormFlow { 
             div {
                 div {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                
+                    @include flex (flex, column nowrap, center, center);
+                    }
                 }
-            }
-        }
+            
         #tablaPedidos{ 
             tr {
                 grid-template-columns: 1fr;
@@ -91,9 +85,10 @@
         }
     }
     #flexFormFlow {
-        h2 {
+        h1, h2 {
             width:80vw;
-            font-size: 28px;
+            font-size: 30px;
+            text-align: center;
         }
         select {
             width:40vw;

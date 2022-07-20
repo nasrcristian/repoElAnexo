@@ -22,9 +22,7 @@ nav {
     ul {
         list-style: none;
         li {
-            font-family:$fuenteSecundaria;
-            font-size: 30px;
-            font-weight: bold;
+            @include fuente ($fuenteSecundaria, left, 30px, bold);
             a{
                 text-decoration: none;
                 color: antiquewhite;
@@ -32,10 +30,8 @@ nav {
                 padding: 3vh 2vh; 
                 height:auto;
                 &:hover {
-                    color:beige !important;
-                    border: 2px groove rgb(211, 127, 244);
-                    background: rgba(232,39,167,0.2);
-                    border-radius: 5px; 
+                    @include border (2px groove rgb(211, 127, 244), 5px, beige!important, none);
+                    background: rgba(79, 33, 165, 0.363);
                 }
             }
         }
