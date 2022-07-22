@@ -1,0 +1,500 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Josefin+Sans:wght@300;400&display=swap'); 
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family:'Josefin Sans', sans-serif;
+}
+
+body {
+    background-image:url(../img/textura-papel.jpg)
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+/* ===================== NAVBAR ==================== */
+nav {
+    background: #e4305a;
+background: linear-gradient(34deg,#e4305a 0%, #f16330 40%, #e753b1 80%);
+background: -webkit-linear-gradient(34deg,#e4305a 0%, #f16330 40%, #e753b1 80%);
+background: -moz-linear-gradient(34deg,#e4305a 0%, #f16330 40%, #e753b1 80%);
+    margin:auto;
+    width:100vw;
+    box-shadow: 0px 10px 30px 10px rgba(151,86,121,0.75);
+-webkit-box-shadow: 0px 10px 30px 10px rgba(151,86,121,0.75);
+-moz-box-shadow: 0px 10px 30px 10px rgba(151,86,121,0.75);
+    animation-name: aparicionNav;
+    animation-duration: 1s;
+    animation-timing-function: normal;
+}
+
+nav ul{
+    list-style: none;
+    }
+
+nav ul li{
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    font-weight: bold;
+} 
+
+nav ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    display:inline-block;   
+    padding: 3vh 2vh; 
+    height:auto;
+}
+nav div ul li a:hover {
+    color:beige !important;
+    border: 2px groove rgb(211, 127, 244);
+    background: rgba(232,39,167,0.2);
+    border-radius: 5px; 
+
+}
+
+.headLogo {
+    width: 100%;
+    height:15vh;
+
+}
+
+/* ====================== FOOTER ======================== */
+footer {
+    width:100%;
+    background-color: #f1155ec7;
+    margin-top:1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    animation-name: aparicionFooter;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    overflow-y: hidden;
+}
+
+footer h3 {
+    font-size: 20px;
+    color:rgb(248, 201, 114);
+    display:block;
+    padding:0;
+    margin:10px;
+    text-align:center;
+    line-height: 20px;
+}
+
+footer h3 a {
+    text-decoration:none;
+    display:block;
+    color:rgb(107, 8, 116);
+}
+footer h3 a:hover{
+    text-decoration:underline;
+    color:rgb(161, 10, 175);
+}
+
+footer img {
+    width:2rem;
+    height:auto;
+    margin:0 1rem;
+}
+
+.flexContainerFooter {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+} 
+
+
+@media only screen and (max-width: 832px)
+    {
+        .flexContainerFooter{
+            flex-direction: column;
+            width:100%;
+            height:auto;
+            align-items: center;
+            margin: auto;
+        }
+    }
+
+@media only screen and (max-width: 832px)
+{
+    footer{
+        flex-direction: column;
+        width:100%;
+        height:16vh;
+    }
+}
+
+/* ====================== PAGE INDEX ========================= */
+
+header h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 5rem;
+    text-align: center;
+    margin:3rem 5rem;
+    border:double 3px #9C004D;
+    border-radius: 5px;
+    background-image: url(../img/textura-grunge-3.jpg);
+}
+
+
+@media only screen and (max-width:622px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
+@media only screen and (max-width:338px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+main article figure img {
+    width:25%;
+    height: 25%;
+    border: #430581 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 50%;
+}
+
+main article figcaption {
+    font-size:1,2vw;
+    padding: 2vh 2vw;
+    box-shadow: rgba(36, 9, 100, 0.895) 1px 2px 2px 3px;
+    border-radius: 20%;
+    line-height: 2rem;  
+}
+
+
+/* =================== PAGE PEDIDOS ======================== */
+
+#tablaPedidos {
+    width: 100%;
+    margin:1rem auto;
+    background-image: linear-gradient(rgba(234, 188, 255, 0.466), rgba(164, 51, 250, 0.219) ), url(../img/textura-acuarela.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+
+#tablaPedidos th{
+    display: flex;
+    width:100vw;
+    justify-content: center;
+
+}
+
+#tablaPedidos th h2 {
+    text-align: center;
+    width: 50vw;
+    background: rgba(209, 88, 106, 0.841);
+    background: radial-gradient(circle, rgba(209, 88, 106, 0.832) 13%, rgba(227, 107, 165, 0.855) 40%, rgba(238, 136, 102, 0.79) 64%, rgba(255, 60, 0, 0.807) 100%);
+    font-family: 'Amatic SC', cursive;
+    height: 8vh;
+    font-size:3rem;
+    line-height:2rem;
+    font-weight: 700;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#tablaPedidos  tr {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: auto;
+
+}
+
+#tablaPedidos tr td {
+    margin:30px;
+    border: #4e0b7577 solid 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    width: auto;
+    font-size: 40px;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    color:#000000;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#tablaPedidos input[type=number] {
+    height:4vh;
+    font-family:'Josefin Sans', sans-serif;
+    font-size:2vh;
+    padding: 5px;
+}
+
+#tablaPedidos td div label {
+    margin: 10px 5px;
+}
+
+#tablaPedidos img {
+    width:15vw;
+    height:auto;
+} 
+
+@media only screen and (max-width:1112px) {
+    #tablaPedidos tr td {
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:1062px) {
+    #tablaPedidos tr {
+        grid-template-columns: 1fr 1fr;
+        }
+    #tablaPedidos img {
+        width: 20vw;
+    }
+}
+
+/* ======================== FORMULARIO ======================*/
+
+#flexFormFlow {
+    flex-flow:  column wrap;
+    align-items: center;
+}
+
+#flexFormFlow h2 {
+    color:#9C004D;
+    font-size: 2rem;
+    background-color: rgba(250, 234, 215, 0.563);
+    height: 10vh;
+    border: #9C004D solid 3px;
+}
+
+#flexFormFlow div label, select, input {
+    font-size: 20px;
+}
+
+
+#flexFormFlow input[type=number] {
+    height: 3vh;
+}
+#flexFormFlow input[type=text] {
+    height: 3vh;
+}
+
+#flexFormFlow input[type=email] {
+    height: 3vh;
+}
+
+#flexFormFlow textarea {
+    width: 40vw;
+    height:40vh;
+    resize: none;
+    font-size:18px;
+    outline: none;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+#flexFormFlow h3 {  
+    color: blueviolet;
+    border-radius: 33px 33px 33px 33px;
+    -webkit-border-radius: 33px 33px 33px 33px;
+    -moz-border-radius: 33px 33px 33px 33px;;
+    background: rgba(197,20,58,0.5);
+    background: linear-gradient(131deg,rgba(197,20,58,0.5) 20%, rgba(180,16,130,0.5) 60%, rgba(255,0,131,0.5) 99%);
+    background: -webkit-linear-gradient(131deg,rgba(197,20,58,0.5) 20%, rgba(180,16,130,0.5) 60%, rgba(255,0,131,0.5) 99%);
+    background: -moz-linear-gradient(131deg,rgba(197,20,58,0.5) 20%, rgba(180,16,130,0.5) 60%, rgba(255,0,131,0.5) 99%);
+    border: #7c14c5 solid 1px;
+}
+
+#flexFormFlow div label {
+    color:#9C004D;
+}
+
+
+.btnSubmit {
+    border-radius: 10px;
+    border: solid 1px #4e04988c;
+    color:blueviolet;
+    background-color: #a758f642;
+}
+
+.btnSubmit:hover {
+    color: rgb(198, 104, 145);
+    border-radius: 10px;
+    border: solid 1px #81689a8c;;
+    background-color: #c08cf442;
+}
+
+.contactoInputs {
+    width:40vw;
+    height:100%;
+    font-size: 1rem;
+}
+
+.botonFileUp {
+    border: solid 3px rgb(74, 18, 157);
+    color: rgb(74, 18, 157);
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    width:15vw;
+    box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
+}
+
+.inputFileUp {
+    color: rgb(175, 18, 94);
+    border-radius: 8px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    width:50vw;
+    height:50vh;
+    border: #9C004D solid 5px;
+    background-image: url(../img);
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    #flexFormFlow .botonFileUp {
+        width: 50vw;
+    }
+
+    #flexFormFlow textarea {
+        width: 80vw;
+    }
+
+    #flexFormFlow div div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:711px) {
+    #tablaPedidos tr {
+        grid-template-columns: 1fr;
+        }
+    #tablaPedidos img {
+            width: 30vw;
+        }
+}
+
+@media only screen and (max-width:455px) {
+    #tablaPedidos th h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width:359px) {
+        #tablaPedidos th {
+            font-size: 3rem;
+        }
+        #tablaPedidos tr td {
+            font-size:2rem;
+            }
+        }
+
+/* =================== PAGE CONTACTO ======================= */
+
+.entradaMapa {
+    animation-name: entradaMapa;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+}
+
+.ubicacionFlex {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main section h2 {
+    font-family: 'Indie Flower', cursive;
+    color:#9C004D;
+}
+
+main section h3 {
+    font-family: 'Amatic SC', cursive;
+    color:#6f1274e4
+}
+
+
+main section iframe {
+    border:#430581 solid 3px;
+    width:60vw;
+    height:60vh;
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .ubicacionFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 562px) {
+    .ubicacionFlex iframe {
+        width:90vw;
+        height:80vh;
+    }
+}
+
+
+/* ============== ANIMACIONES =========== */
+
+@keyframes aparicionNav {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@keyframes entradaMapa {
+    0% {
+        transform: translateX(-900px);
+        border:#43058100 solid 3px;
+    }
+    50% {
+        transform: translateX(0px);
+        border:#43058125 solid 3px;
+    }
+    
+    75% {
+        border:#4305818c solid 3px;
+    }
+
+    100% {
+        border:#430581 solid 3px;
+    }
+
+}
+
+@keyframes aparicionFooter {
+    0% {
+        transform:scale(0);
+    }
+
+    100% {
+        transform:scale(1);
+    }
+}
