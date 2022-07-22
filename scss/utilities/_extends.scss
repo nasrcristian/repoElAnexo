@@ -1,0 +1,12 @@
+%columnaFlex {
+    @include flex (flex, column wrap, center, center);
+}
+
+%bgGradient {
+    background:radial-gradient(circle, rgba(233, 51, 157, 0.5) 13%, rgba(245, 50, 157, 0.5) 40%, rgba(228, 68, 233, 0.5) 64%, rgba(214, 45, 248, 0.5) 100%), url(../img/textura-grunge-3.jpg);
+    line-height:2rem;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    color:rgb(37, 7, 105);
+    text-align: center;
+
+}

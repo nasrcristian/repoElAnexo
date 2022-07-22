@@ -1,0 +1,203 @@
+
+@media only screen and (max-width:1112px) {
+    #tablaPedidos {
+        tr {
+            td {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1062px) {
+    #tablaPedidos {
+        tr {
+        grid-template-columns: 1fr 1fr;
+        }
+    } 
+    #tablaPedidos { 
+        img {
+            width: 20vw;
+        }
+    } 
+    .sizeCar {
+        height:70vh;
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 865px) {
+    main {
+        h1 {
+            font-size: 35px;
+        }
+    }
+    nav {
+        ul {
+            li {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 832px){
+        .flexContainerFooter{
+            flex-direction: column;
+            width:100%;
+            height:auto;
+            align-items: center;
+            margin: auto;
+        }
+        footer{
+            flex-direction: column;
+            width:100%;
+            height:16vh;
+        }
+        main {
+            article{
+                figure{
+                    img{
+                        width:30%;
+                        height:30%;
+                    }
+                }
+            }
+        }
+        .serviciosList {
+            align-self: center;
+        }
+        .sizeCar {
+            width: 80vw;
+            height: 60vh;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        #flexFormFlow {
+            .botonFileUp {
+                width: 50vw;
+            }
+            .inputFileUp {
+                width: 50vw!important;
+                height: 10vh!important;
+            }
+            textarea {
+                width: 80vw;
+            }
+        }   
+            div {
+                div {
+                    @include flex (flex, column nowrap, center, center);
+                    }
+                }
+            
+        #tablaPedidos{ 
+            tr {
+                grid-template-columns: 1fr;
+            }
+        }
+        #tablaPedidos{ 
+            img {
+                width: 30vw;
+            }
+        }
+        .serviciosImg {
+            width: 100%;
+            height: 15vh;
+        }
+    }
+
+
+    @media only screen and (max-width:625px) {
+        main {
+            h1 {
+                font-size: 30px;
+            }
+        }
+    }
+
+@media only screen and (max-width:622px) {
+    header{
+        h1{
+            font-size: 3rem;
+        }
+    }
+    main {
+        h1 {
+            font-size: 30px;
+        }
+    }
+
+}
+
+@media only screen and (max-width:556px) {
+    header{
+        h1{
+            font-size: 35px;
+        }
+    }
+    main {
+        h1 {
+            font-size: 24px;
+        }
+    }
+    .sizeCar {
+        width: 100vw;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width:455px) {
+    
+    header {
+        h1 {
+            font-size: 29px;
+        }
+    }
+
+    #tablaPedidos{
+        th {
+            h2 {
+                font-size:$textoMD;
+            }
+        }
+    }
+    #flexFormFlow {
+        h1, h2 {
+            width:80vw;
+            font-size: 30px;
+            text-align: center;
+        }
+        select {
+            width:40vw;
+        }
+    }
+}
+
+@media only screen and (max-width:359px) {
+    #tablaPedidos{ 
+        th {
+            font-size: 3rem;
+        }
+    }
+    #tablaPedidos{
+        tr{
+            td {
+                font-size:$textoMD;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

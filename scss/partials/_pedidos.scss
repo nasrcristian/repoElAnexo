@@ -1,0 +1,51 @@
+#tablaPedidos {
+    width: 100%;
+    margin:1rem auto;
+    background-image: linear-gradient(rgba(234, 188, 255, 0.466), rgba(164, 51, 250, 0.219) ), url(../img/textura-acuarela.jpg);
+    background-size:cover;
+    background-position:center;
+    th {
+        display: flex;
+        width:99vw;
+        justify-content: center;
+        h1 {
+            @include fuente ($fuenteSecundaria, center, 3rem, 700);
+            @extend %bgGradient;
+            width: 50vw;
+        }
+    }
+    tr {
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-rows: auto;
+        td {
+            margin:30px;
+            border: #4e0b7577 solid 2px;         
+            color:#000000;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            width: auto;
+            @include fuente ($fuenteSecundaria, center, 40px, 700);
+            @extend %columnaFlex;
+            img {
+                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+            }
+        }
+    }
+    input[type=number] {
+        height:4vh;
+        font-family:$fuenteTerciaria;
+        font-size:2vh;
+        padding: 5px;
+    }
+    td {
+        div {
+            label {
+                margin: 10px 5px;
+            }
+        }
+    }
+    img {
+        width:15vw;
+        height:auto;
+    }
+}

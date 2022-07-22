@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como llegar - el Anexo</title>
+    <meta name="description" content="Se encuentra la ubicación y horarios de atención, junto a un formulario para contactarnos.">
+    <meta name="keywords" content="ubicacion, centro de copiado, grafica, contacto, horario de atencion">
+    <title>Ubicación y contacto - el Anexo</title>
     <link rel="shortcut icon"  href="../img/logo-anexo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/animate.css">
@@ -18,7 +20,7 @@
     <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="headLogo">
+                <img src="../img/logo-anexo.png" alt="Logo de el Anexo - Gráfica Integral" class="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"></button>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                    <a class="nav-link mx-5 mx-md-3" href="../pages/servicios.html">Nuestros servicios</a>
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/quienes.html">¿Quiénes Somos?</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mx-5 mx-md-3" href="../pages/pedido.html">Pedidos</a>
@@ -35,7 +37,7 @@
                     <a class="nav-link mx-5 mx-md-3" href="../pages/ubicacion.html">Ubicación</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mx-5 mx-md-3" href="../pages/contacto.html">Contacto</a>
+                    <a class="nav-link mx-5 mx-md-3" href="../pages/faq.html">Preguntas Frecuentes</a>
                 </li>
                 </ul>
             </div>
@@ -46,28 +48,71 @@
     <!--================================== HEADER ================================-->
 
 <!--starts main-->
-    <main class= "d-flex ubicacionFlex my-4">
-        <section class="m-3">
-            <h2 class="text-center">
-                Horario de atención:
-            </h2>
-            <h3 class="text-center">
-                Lunes a Viernes: 10hs a 16hs.
-            </h3>
+    <main>
+        <section class= "d-flex ubicacionFlex my-4">
+            <div class="m-3">
+                <h2>
+                    Horario de atención:
+                </h2>
+                <h3>
+                    Lunes a Viernes: 10hs a 16hs.
+                </h3>
+            </div>
+            <div class="m-3">
+                <h2>
+                    Nos encontramos en:
+                </h2>
+                <h3>
+                    Gral. Mariano Necochea 325, Florencio Varela, Buenos Aires.
+                </h3>
+            </div>
+            <div class="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3277.2693726430743!2d-58.2741928!3d-34.7739934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ea59dbdd4f3%3A0xf829a8e2b84781a1!2sGral.%20Mariano%20Necochea%20325%2C%20B1888%20AUG%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653960295469!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="entradaMapa">
+                </iframe>
+            </div>
         </section>
-        <section class="m-3">
-            <h2 class="text-center">
-                Nos encontramos en:
-            </h2>
-            <h3 class="textAmatic text-center">
-                Gral. Mariano Necochea 325, Florencio Varela, Buenos Aires.
-            </h3>
+<!--============================== CONTACTO =================================================-->
+        <section class="seccionContacto">
+            <form action="reclamo.php" id="flexFormFlow">  
+                <h1 class="py-3">
+                    Contactate con nosotros
+                </h1>
+                <div>
+                    <div>
+                        <div class="">
+                            <div class="">
+                                <label for="nombre" class=""> 
+                                    Nombre:
+                                </label>
+                                <input class="d-block" type="text" id="nombre" required>
+                            </div>
+                            <div class="">
+                                <label for="email" class="">
+                                    E-mail:
+                                </label>
+                                <input type="email" id="email" required class="d-block">
+                            </div>
+                        </div>
+                        <label for="asunto" class="">
+                            Asunto:
+                        </label>
+                        <select name="asunto" id="asunto" required class="d-block">
+                            <option value="reclamo">Reclamo</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <label for="mensaje" class="d-block">
+                        Mensaje
+                    </label>
+                    <textarea name="mensaje" id="mensaje" cols="50" rows="10" required class="d-block"></textarea>
+                    <div>
+                        <input type="submit" class="btnSubmit p-2 m-3">
+                        <input type="reset" class="btnSubmit p-2 m-3">
+                    </div>
+                </div>
+            </form>
         </section>
-        <section class="">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3277.2693726430743!2d-58.2741928!3d-34.7739934!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32ea59dbdd4f3%3A0xf829a8e2b84781a1!2sGral.%20Mariano%20Necochea%20325%2C%20B1888%20AUG%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653960295469!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="entradaMapa">
-            </iframe>
-        </section>
-    
     </main>
 <!--ends main-->
 

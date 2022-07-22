@@ -1,0 +1,20 @@
+@mixin fuente($type, $align, $size, $peso) {
+    font-family: $type;
+    text-align: $align;
+    font-size: $size;
+    font-weight: $peso;
+}
+
+@mixin border ($borde, $radio, $color, $fondo) {
+    border:$borde;
+    border-radius: $radio;
+    color:$color;
+    background-color: $fondo;
+}
+
+@mixin flex ($display, $flow, $justify, $align) {
+    display: $display;
+    flex-flow: $flow;
+    justify-content: $justify;
+    align-items: $align;
+}

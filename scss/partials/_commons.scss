@@ -1,0 +1,48 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:radial-gradient(circle, rgba(255,59,145,0.2637429971988795) 24%, rgba(226,105,48,0.3169642857142857) 68%), url(../img/textura-papel.jpg);
+    font-family:$fuentePrincipal;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+.btnSubmit {
+    @include border (solid 1px #4e04988c, 10px, $colorPrimario, #a758f642);
+    height: auto!important;
+}
+
+.btnSubmit:hover {
+    @include border (solid 1px #725d868c, 10px, rgb(230, 200, 213), #6c1bbd86);
+}
+
+.contactoInputs {
+    width:40vw;
+    height:100%;
+    font-size: 1rem;
+}
+
+.bgMagenta {
+    background-color: map-get($map: $bgColors, $key: magenta);
+}
+
+.bgCrimson {
+    background-color: map-get($map: $bgColors, $key: crimson );
+}
+
+.bgPurple {
+    background-color: map-get($map: $bgColors, $key: purple);
+}
+
+.bgPink {
+    background-color: map-get($map: $bgColors, $key: pink);
+}
