@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Indie+Flower&family=Josefin+Sans:wght@300;400&display=swap");
-#flexFormFlow, .seccionContacto, #tablaPedidos tr td, main {
+#flexFormFlow, #tablaPedidos tr td, main {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -51,6 +51,35 @@ input[type=number]::-webkit-outer-spin-button {
   width: 40vw;
   height: 100%;
   font-size: 1rem;
+}
+
+.botonFileUp {
+  border: solid 3px rgb(105, 18, 187);
+  border-radius: 8px;
+  color: rgb(105, 18, 187);
+  background-color: none;
+  padding: 8px 20px;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  width: 15vw;
+  box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
+}
+
+.inputFileUp {
+  border: #9C004D solid 3px;
+  border-radius: 8px;
+  color: #9C004D;
+  background-color: none;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 19px !important;
+  font-weight: 700;
+  height: 20vh !important;
+  width: fit-content;
+  align-self: center;
+  justify-self: center;
 }
 
 .bgMagenta {
@@ -191,7 +220,7 @@ header h1 {
   font-family: "Indie Flowers", cursive;
   font-size: 3rem;
   text-align: center;
-  margin: 5rem 5rem;
+  margin: 4rem;
   border: double 3px #9C004D;
   border-radius: 5px;
   height: 10vh;
@@ -240,7 +269,7 @@ main h1 {
   color: black;
   background-color: none;
   font-size: 20px;
-  line-height: 32px;
+  line-height: 40px;
   width: 70vw;
   margin-top: 2rem;
 }
@@ -260,7 +289,7 @@ main h1 {
 }
 
 #tablaPedidos {
-  width: 100%;
+  width: 99%;
   margin: 1rem auto;
   background-image: linear-gradient(rgba(234, 188, 255, 0.466), rgba(164, 51, 250, 0.219)), url(../img/textura-acuarela.jpg);
   background-size: cover;
@@ -298,7 +327,8 @@ main h1 {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 #tablaPedidos input[type=number] {
-  height: 4vh;
+  height: 3vh;
+  width: 90%;
   font-family: "Indie Flowers", cursive;
   font-size: 2vh;
   padding: 5px;
@@ -341,10 +371,159 @@ main section iframe {
   border-radius: 20px;
 }
 
-.seccionContacto {
-  width: 100vw;
+#faq {
+  max-width: 700px;
+  margin: auto;
+  padding: 0 15px;
+  text-align: center;
 }
 
+section.faq {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+#faq ul {
+  text-align: left;
+}
+
+.transition, p, ul li i:before, ul li i:after {
+  transition: all 0.3s;
+}
+
+#faq .no-select, #faq h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+#faq h1 {
+  color: #000;
+  margin-bottom: 30px;
+  margin-top: 0;
+}
+
+#faq h2 {
+  color: #cc071e;
+  font-family: "hm_light", sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: left;
+  padding: 15px 15px 0;
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+#faq p {
+  color: #333;
+  text-align: left;
+  font-family: "hm_light", sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  position: relative;
+  overflow: hidden;
+  max-height: 250px;
+  will-change: max-height;
+  contain: layout;
+  display: inline-block;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 0 50px 0 15px;
+  transition: 0.3s opacity, 0.6s max-height;
+  hyphens: auto;
+  z-index: 2;
+}
+
+#faq ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+#faq ul li {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  /*padding-bottom: 4px;*/
+  /*padding-top: 18px;*/
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#faq ul li + li {
+  margin-top: 15px;
+}
+
+#faq ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+#faq ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 28px;
+  right: 15px;
+}
+
+#faq ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #cc071e;
+  width: 3px;
+  height: 9px;
+}
+
+#faq ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+#faq ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+#faq ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  touch-action: manipulation;
+}
+
+#faq ul li input[type=checkbox]:checked ~ h2 {
+  color: #000;
+}
+
+#faq ul li input[type=checkbox]:checked ~ p {
+  /*margin-top: 0;*/
+  max-height: 0;
+  transition: 0.3s;
+  opacity: 0;
+  /*transform: translate(0, 50%);*/
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+#flexFormFlow {
+  width: 90%;
+}
 #flexFormFlow h1,
 #flexFormFlow h2 {
   border: #9C004D solid 3px;
@@ -356,7 +535,8 @@ main section iframe {
   height: 10vh;
 }
 #flexFormFlow h1 {
-  align-self: flex-start;
+  align-self: center;
+  width: 85%;
 }
 #flexFormFlow div label {
   color: #9C004D;
@@ -389,32 +569,6 @@ main section iframe {
   background: -moz-linear-gradient(131deg, rgba(197, 20, 58, 0.5) 20%, rgba(180, 16, 130, 0.5) 60%, rgba(255, 0, 131, 0.5) 99%);
 }
 
-.botonFileUp {
-  border: solid 3px rgb(105, 18, 187);
-  border-radius: 8px;
-  color: rgb(105, 18, 187);
-  background-color: none;
-  padding: 8px 20px;
-  font-family: "Amatic SC", cursive;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 700;
-  width: 15vw;
-  box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
-}
-
-.inputFileUp {
-  border: #9C004D solid 5px;
-  border-radius: 8px;
-  color: #9C004D;
-  background-color: none;
-  font-family: "Amatic SC", cursive;
-  text-align: center;
-  font-size: 2rem !important;
-  font-weight: 700;
-  height: 50vh !important;
-}
-
 @media only screen and (max-width: 1112px) {
   #tablaPedidos tr td {
     font-size: 35px;
@@ -432,12 +586,16 @@ main section iframe {
     width: 80vw;
   }
 }
-@media only screen and (max-width: 865px) {
+@media only screen and (max-width: 868px) {
   main h1 {
     font-size: 35px;
   }
   nav ul li {
     font-size: 23px;
+  }
+  #flexFormFlow h1 {
+    font-size: 28px;
+    width: 85%;
   }
 }
 @media only screen and (max-width: 832px) {
@@ -448,17 +606,13 @@ main section iframe {
     align-items: center;
     margin: auto;
   }
-  footer {
-    flex-direction: column;
-    width: 100%;
-    height: 16vh;
-  }
   main article figure img {
     width: 30%;
     height: 30%;
   }
   .serviciosList {
     align-self: center;
+    padding: 25px !important;
   }
   .sizeCar {
     width: 80vw;
@@ -469,12 +623,8 @@ main section iframe {
   #flexFormFlow .botonFileUp {
     width: 50vw;
   }
-  #flexFormFlow .inputFileUp {
-    width: 50vw !important;
-    height: 10vh !important;
-  }
   #flexFormFlow textarea {
-    width: 80vw;
+    width: 90%;
   }
   div div {
     display: flex;
@@ -502,9 +652,6 @@ main section iframe {
   header h1 {
     font-size: 3rem;
   }
-  main h1 {
-    font-size: 30px;
-  }
 }
 @media only screen and (max-width: 556px) {
   header h1 {
@@ -514,23 +661,38 @@ main section iframe {
     font-size: 24px;
   }
   .sizeCar {
-    width: 100vw;
+    width: 90vw;
     height: 50vh;
+  }
+  #flexFormFlow h2 {
+    width: 70vw;
+    font-size: 24px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 476px) {
+  #flexFormFlow h2 {
+    width: 70vw;
+    font-size: 24px;
+    text-align: center;
+  }
+  .inputFileUp {
+    width: 100%;
+    margin: 0 !important;
   }
 }
 @media only screen and (max-width: 455px) {
   header h1 {
-    font-size: 29px;
+    font-size: 30px;
   }
-  #tablaPedidos th h2 {
+  .serviciosList {
+    width: 90vw;
+    margin: 1rem 0 !important;
+  }
+  #tablaPedidos th h1 {
     font-size: 2rem;
   }
-  #flexFormFlow h1, #flexFormFlow h2 {
-    width: 80vw;
-    font-size: 30px;
-    text-align: center;
-  }
-  #flexFormFlow select {
+  select {
     width: 40vw;
   }
 }
@@ -540,6 +702,12 @@ main section iframe {
   }
   #tablaPedidos tr td {
     font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 349px) {
+  #flexFormFlow h2 {
+    width: 60%;
+    font-size: 19px;
   }
 }
 

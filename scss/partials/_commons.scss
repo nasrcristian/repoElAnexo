@@ -31,6 +31,24 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 1rem;
 }
 
+.botonFileUp {
+    @include border (solid 3px $colorPrimario, 8px, $colorPrimario, none);
+    padding: 8px 20px;
+    @include fuente ($fuenteSecundaria, center, 28px, 700);
+    width:15vw;
+    box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
+}
+
+.inputFileUp {
+    @include border ($colorSecundario solid 3px, 8px, $colorSecundario, none);
+    @include fuente ($fuenteSecundaria, center, 19px!important, 700);
+    height:20vh!important;
+    width:fit-content;
+    align-self: center;
+    justify-self: center;
+}
+
+
 .bgMagenta {
     background-color: map-get($map: $bgColors, $key: magenta);
 }

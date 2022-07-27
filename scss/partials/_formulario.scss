@@ -1,9 +1,10 @@
-.seccionContacto {
-    width:100vw;
-    @extend %columnaFlex;
-}
+// .seccionContacto {
+//     width:100vw;
+//     @extend %columnaFlex;
+// }
 
 #flexFormFlow {
+    width: 90%;
     @extend %columnaFlex;
     h1,
     h2 {
@@ -13,7 +14,8 @@
         height: 10vh;
     }
     h1 {
-        align-self: flex-start;
+        align-self: center;
+        width:85%;
     }
     div {
         label {
@@ -48,16 +50,3 @@
     }
 }
 
-.botonFileUp {
-    @include border (solid 3px $colorPrimario, 8px, $colorPrimario, none);
-    padding: 8px 20px;
-    @include fuente ($fuenteSecundaria, center, 28px, 700);
-    width:15vw;
-    box-shadow: rgba(55, 40, 66, 0.1) 0px 8px 24px, rgba(102, 20, 65, 0.153) 0px 16px 56px, rgba(127, 66, 49, 0.192) 0px 24px 80px;
-}
-
-.inputFileUp {
-    @include border ($colorSecundario solid 5px, 8px, $colorSecundario, none);
-    @include fuente ($fuenteSecundaria, center, $textoMD!important, 700);
-    height:50vh!important;
-}

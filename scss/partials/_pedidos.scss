@@ -1,5 +1,5 @@
 #tablaPedidos {
-    width: 100%;
+    width: 99%;
     margin:1rem auto;
     background-image: linear-gradient(rgba(234, 188, 255, 0.466), rgba(164, 51, 250, 0.219) ), url(../img/textura-acuarela.jpg);
     background-size:cover;
@@ -32,7 +32,8 @@
         }
     }
     input[type=number] {
-        height:4vh;
+        height:3vh;
+        width: 90%;
         font-family:$fuenteTerciaria;
         font-size:2vh;
         padding: 5px;
